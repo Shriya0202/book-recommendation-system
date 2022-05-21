@@ -1,4 +1,6 @@
 # Book Recommendation System
+## Problem Statement: 
+To build a book recommendation system that shows customer recommendation based on the books that they have read or what they are searching/interested in
 ## High Level Design: Book Recommendation System
  ![image](https://user-images.githubusercontent.com/78153966/169660652-057569f6-3510-47ab-8990-a74354fe4d41.png)
 
