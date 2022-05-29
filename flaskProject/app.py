@@ -35,9 +35,11 @@ class prediction(Resource):
         book_pivot.iloc[237, :].values.reshape(1, -1)
         print(book_name)
         book_name = str(book_name)
-        book_id= 0
-        book_id = np.where(book_pivot.index == book_name)[0][0]
-        if book_id!=0:
+        try:
+            book_id = np.where(book_pivot.index == book_name)[0][0]
+        except:
+            return "Book not found in Database! Please Re-enter the Book Name"
+        else:
             model = pickle.load(open('model.pkl', 'rb'))
             distances, suggestions = model.kneighbors(book_pivot.iloc[book_id, :].values.reshape(1, -1))
             ans = ''
@@ -49,8 +51,7 @@ class prediction(Resource):
                         ans = ans + " " + item + ","
                         print(suggestions[i], file=sys.stderr)
             return str(ans)
-        else:
-            return "Book not found in Database! Please Re-enter"
+
 
 
 
