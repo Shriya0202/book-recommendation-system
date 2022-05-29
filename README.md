@@ -73,7 +73,7 @@ Book Recommendation System is taking care of all these isolated systems that we 
 High Level Design
 -----------------
 
-![](file:///C:/Users/shriy/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![image](https://user-images.githubusercontent.com/78153966/170875508-e897e5c3-6452-4d36-b556-d7048dde3df2.png)
 
 ### HLD Components in Brief:
 
@@ -98,7 +98,7 @@ Low Level Design: Book Recommendation System
 
 ### Recommendation Algorithms
 
-![](file:///C:/Users/shriy/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![image](https://user-images.githubusercontent.com/78153966/170875559-f8fe76c9-3f75-4395-b53f-5a127aaaa9d5.png)
 
 Essentially an AI engine that trains itself for Recommendations and heart of whole system
 
